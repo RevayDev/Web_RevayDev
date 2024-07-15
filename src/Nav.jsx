@@ -25,10 +25,10 @@ export default function Nav() {
     <nav className={`nav `}>
       <h1 className='nav__logo'>RevayDev</h1>
       <ul className={`nav__menu ${menuToggle ? 'active' : ''}`}>
-        <li><NavHashLink to="/#">Inicio</NavHashLink></li>
+        <li><NavHashLink to="#">Inicio</NavHashLink></li>
         <li><NavHashLink to="/#sobre_mi">Sobre mi</NavHashLink></li>
         <li><NavHashLink to="/#proyectos">Proyectos</NavHashLink></li>
-        <li><NavHashLink to="/#habilidades">Habilidades</NavHashLink></li>
+        <li><NavHashLink to="#habilidades">Habilidades</NavHashLink></li>
       </ul>
       <span className={`menu--toggle ${menuToggle ? 'mostrar_x' : ''}`} onClick={() => setMenuToggle(!menuToggle)}>
         <span className='barra1'></span>
