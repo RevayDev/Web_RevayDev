@@ -12,6 +12,8 @@ import CorreoCopy from "../components/CorreoCopy";
 
 import { NavHashLink } from 'react-router-hash-link';
 import Habilidades_rapidas from "../components/Habilidades_rapidas";
+import { useState, useEffect } from 'react';
+
 
 const handleClick = () => {
   setTimeout(() => {
@@ -23,12 +25,27 @@ const handleClick = () => {
 };
 
 export default function Inicio() {
-  const [scroll, setScroll] = React.useState(false);
+  const [scroll, setScroll] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 700);
 
-  React.useEffect(() => {
-    window.addEventListener("scroll", () => {
+  useEffect(() => {
+    const handleScroll = () => {
       setScroll(window.scrollY > 200);
-    });
+    };
+
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 700);
+    };
+
+    // Agregar listeners para scroll y resize
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    // Limpiar los eventos al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
 
@@ -83,23 +100,23 @@ export default function Inicio() {
 <div className="historia">
 
               <Historia
-                titulo="Inicio - Frontend"
-                fecha="Julio 2021"
-                texto="Inicié con micro:bit, mi primera web no fue perfecta, pero mejoré y ahora diseño sitios profesionales y atractivos."
+                titulo="Desarrollador SafeBox"
+                fecha="Mayo 2024"
+                texto="Dueño del programa SafeBox. Es un programa para ocultar tu informacon con una contraseña, puede ser usada en una USB o de forma local."
                 tipo="secundario"
               />
 
               <Historia
-                titulo="Creando - Porfolio"
-                fecha="Enero 2023"
-                texto="Desarrollo mi portafolio con React, inspirándome en diseños de referencia para crear una web estética y profesional."
+                titulo="Desarrollador R.T.B"
+                fecha="Septiembre 2024"
+                texto='Desarrollador web y diseñador del proyecto "Reinventa tu botella". Su mision es reciclar las botellas y recompenzar a los estudiantes por lograr eso.'
                 tipo="secundario"
               />
 
               <Historia
-                titulo="Estudiando - Backend"
-                fecha="Abril 2024"
-                texto="Actualmente, estoy aprendiendo sobre Backend para poder desarrollar sitios web de tiendas en línea y proyectos similares."
+                titulo="Desarrollador InkyOS"
+                fecha="Julio 2024"
+                texto="Dueño de uno de los sistemas operativo modificado de windows. Creado para las escuelas. Actualmente esta en desarrollo."
                 
              />
             </div>
@@ -178,7 +195,8 @@ export default function Inicio() {
         />
       </article>
 
-      <article className="proyecto__carta proyecto_card">
+      <article className={`proyecto__carta  ${isSmallScreen ? '' : 'proyecto_card '}`}>
+
         
         <div>
           <img
@@ -269,7 +287,7 @@ export default function Inicio() {
           <span className="contenedor_encabesado"><i class="fa-solid fa-user"></i><h1>Sobre mi</h1></span>
           <div className="Contendedor_Sobremi">
           <p className="sobremi_descripcion">
-          Mi nombre es <span className="resaltar">Roberto Jimenez</span> tambien conocido como RevayDev soy un joven de 16 años y soy de nacionalidad colombiana.
+          Mi nombre es <span className="resaltar">Roberto Jimenez</span> tambien conocido como RevayDev soy un joven de 17 años y soy de nacionalidad colombiana.
           <br/> <br/>
 poseo una gran capacidad para <span className="resaltar">trabajar en equipo como de manera independiente. </span>
 Me apasiona aprender y estoy constantemente buscando formas de mejorar mis habilidades.<br/><br/>

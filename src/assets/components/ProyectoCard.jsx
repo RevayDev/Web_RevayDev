@@ -4,7 +4,7 @@ export default function ProyectoCard(props) {
   return (
   
     
-    <div class={props.max ? 'proyecto_card' : 'proyecto__interior'}>
+    <div className={props.max ? 'proyecto_card' : 'proyecto__interior'}>
 
   
  <div className='titleAndVersion'> <h1 class="proyecto__carta--titulo">{props.titulo}  </h1> {props.vercion}</div>

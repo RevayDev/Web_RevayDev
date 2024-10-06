@@ -12,9 +12,8 @@ function App() {
     <div>
     <Nav />
   <Routes  scrollBehavior="smooth">
-    <Route path="/" element={<Inicio />} />
+    <Route index path="/" element={<Inicio />} />
     <Route path="*" element={<Error />} />
-    <Route path="Proyecto" element={<Proyectos />} />
    
   </Routes>
 

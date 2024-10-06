@@ -86,7 +86,6 @@ transition: var(--trasition);
    }
 }
 
-
 .menu--toggle{
     cursor: pointer;
     display: flex;
@@ -103,7 +102,6 @@ transition: var(--trasition);
 
 
 
-
 @media (max-width: 700px) {
     .nav{
       
@@ -114,7 +112,7 @@ transition: var(--trasition);
         position: absolute;
         z-index: 90;
         overflow: hidden;
-        padding: 40px 0 40px 0;
+        padding: 20px 0 40px 0;
       width: 100%;
       left: -17px;
       right: 0;
@@ -149,7 +147,7 @@ transition: 0.3s;
     }
     
     .active{
-        gap: 15px;
+        gap: 20px;
         height: auto;
         top: 100%;
       opacity: 1;

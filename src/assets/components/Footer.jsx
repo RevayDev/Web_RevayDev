@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
           </div>
      
-        <div className="footer__derechos">© 2024 RevayDev - Hecho con 💙</div>
+        <div className="footer__derechos">© 2024 RevayDev - Hecho con mucho 💙</div>
   
       <div className="contacto__formulario elemento">
         <form action="https://formspree.io/f/xgejzykw" method="POST">
