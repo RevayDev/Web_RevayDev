@@ -1,17 +1,17 @@
 import React from "react";
-import "../stylesheets/App.scss";
-import Estadisticas from "../components/Habilidades_rapidas";
-import Historia from "../components/Historia";
-import ProyectoCard from "../components/ProyectoCard";
-import Titulo from "../components/Titulo";
-import Icono from "../components/Icono";
-import SeccionExtra from "../components/SeccionExtra";
-import ConsejosCart from "../components/ConsejosCart";
-import Footer from "../components/Footer";
-import CorreoCopy from "../components/CorreoCopy";
+import "../assets/stylesheets/App.scss";
+import Estadisticas from "../assets/components/Habilidades_rapidas";
+import Historia from "../assets/components/Historia";
+import ProyectoCard from "../assets/components/ProyectoCard";
+import Titulo from "../assets/components/Titulo";
+import Icono from "../assets/components/Icono";
+import SeccionExtra from "../assets/components/SeccionExtra";
+import ConsejosCart from "../assets/components/ConsejosCart";
+import Footer from "../assets/components/Footer";
+import CorreoCopy from "../assets/components/CorreoCopy";
 
 import { NavHashLink } from 'react-router-hash-link';
-import Habilidades_rapidas from "../components/Habilidades_rapidas";
+import Habilidades_rapidas from "../assets/components/Habilidades_rapidas";
 import { useState, useEffect } from 'react';
 
 

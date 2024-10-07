@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link';
-import Flash from '../components/Flash';
-import Footer from "../components/Footer";
-import "../stylesheets/Error.scss";
+import Flash from '../assets/components/Flash';
+import Footer from "../assets/components/Footer";
+import "../assets/stylesheets/Error.scss";
 
 export default function Error() {
   return (
