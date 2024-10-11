@@ -12,6 +12,11 @@
     z-index: 80;
     gap:0;
     border: none;
+    &     button:focus,
+    button:focus-visible, input:focus,
+    input:focus-visible {
+      
+      outline: none;
   
   }
   
@@ -25,7 +30,8 @@
     border-radius: 20px 0 0 2px;
     border: none !important;
 
-   
+
+    }
   }
   
   .copy_botom{

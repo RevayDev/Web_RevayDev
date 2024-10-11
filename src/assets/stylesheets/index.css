@@ -5,6 +5,8 @@
   src: url(../fonts/DS-DIGIB.TTF);
 }
 
+
+
 :root {
     overflow-x: hidden;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -37,6 +39,8 @@
   margin: 0;
   padding: 0;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent; /* Para navegadores WebKit (Safari, Chrome) */
+  tap-highlight-color: transparent; /* Para otros navegadores */
 }
 
 
@@ -79,15 +83,12 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible, input:focus,
-input:focus-visible {
-  
-  outline: none;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {

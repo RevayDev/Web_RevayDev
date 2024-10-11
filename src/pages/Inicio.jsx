@@ -106,12 +106,7 @@ export default function Inicio() {
                 tipo="secundario"
               />
 
-              <Historia
-                titulo="Desarrollador R.T.B"
-                fecha="Septiembre 2024"
-                texto='Desarrollador web y diseñador del proyecto "Reinventa tu botella". Su mision es reciclar las botellas y recompenzar a los estudiantes por lograr eso.'
-                tipo="secundario"
-              />
+           
 
               <Historia
                 titulo="Desarrollador InkyOS"
@@ -210,7 +205,7 @@ export default function Inicio() {
 <i className="fa-brands fa-python"></i>
 
           <i className="fa-brands fa-html5"></i>
-          <i className="fa-brands fa-css3"></i>
+          <i className="fa-brands fa-css3-alt"></i>
           </div>
           </div>
         </div>
