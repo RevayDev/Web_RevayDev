@@ -230,7 +230,7 @@ export default function Inicio() {
 
       <div className="caja">
        
-       <NavHashLink to="/proyectos"> <button className="BotomMasInformacion" onClick={handleClick}><span>Volver al inicio</span></button></NavHashLink>
+       <NavHashLink to="/proyectos"> <button className="BotomMasInformacion" onClick={handleClick}><span>Mas Proyectos</span></button></NavHashLink>
        </div>
           </section>
 </div>
