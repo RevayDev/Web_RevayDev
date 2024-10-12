@@ -9,7 +9,7 @@ export default function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScroll(window.scrollY > 120);
+      setScroll(window.scrollY > 60);
       
       // Verify scroll position to change active link
       const sections = ['#sobre_mi', '#proyectos', '#habilidades'];

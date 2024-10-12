@@ -16,7 +16,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 160px 0 30px 0;
+  padding: 150px 0 30px 0;
   border-bottom: rgba(255, 255, 255, 0.185) solid 2px;
   border-radius: 1rem;
   
@@ -47,7 +47,6 @@
   display: flex;
   flex-flow: row wrap;
   gap: 7px;
-  margin-top: 30px;
  align-items: center;
  justify-content: center;
  text-align: center;
@@ -61,8 +60,8 @@
   color: var(--mini_letra);
   position: relative;
   padding: 10px;
-  border-radius: 20px 2px;
-  background: var(--color_primario);
+  border-radius: 10px 2px;
+  background: var(--color_secundario);
   
   & span{
 position: relative;
@@ -76,12 +75,29 @@ color: rgb(194, 194, 194);
   inset: 2px;
   content: "";
   background-color: rgba(0, 0, 0, 0.822);
-  border-radius: 20px 2px;
+  border-radius: 10px 2px;
 
 }
 
 @media (max-width: 700px){
   .Titulo__Page{
     font-size: 60px;
+  }
+
+  .informacion__general{
+    margin-top: 10px;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .Parte{
+    font-size: 12px;
+  }
+  .page__proyectos{
+    margin-top: 20px;
+  }
+
+  .header--page{
+    padding: 130px 0 30px 0;
   }
   }
