@@ -323,7 +323,6 @@ Destaco por mi habilidad para asimilar rápidamente nuevos conocimientos y aplic
      
       </main>
 
-      <Footer/>
     </>
   );
 }

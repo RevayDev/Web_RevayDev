@@ -22,9 +22,9 @@ form {
     background-color: #05131c;
     border: none;
     border-radius: 20px 2px;
-    width: 300px;
+    width: auto;
     padding: 10px;
-    margin: 5px auto;
+    margin: 5px;
   }
   
   textarea{
@@ -34,14 +34,17 @@ form {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: white;
   background-color: #1a3d54;
-    margin-top: 20px;
+  
     transition: 0.5s;
 border: none;
     border-radius: 7px 2px;
     padding: 10px 2px;
-    width: 100%;
+    width: 270px;
     font-weight: bold;
     align-self: center;
+    margin: 5px;
+    margin-top: 20px;
+
   }
   
   .formulario__enviar:hover {
