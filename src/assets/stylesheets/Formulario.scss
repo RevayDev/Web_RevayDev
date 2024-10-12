@@ -22,7 +22,7 @@ form {
     background-color: #05131c;
     border: none;
     border-radius: 20px 2px;
-    width: 250px;
+    width: 300px;
     padding: 10px;
     margin: 5px auto;
   }
@@ -38,8 +38,9 @@ form {
     transition: 0.5s;
 border: none;
     border-radius: 7px 2px;
-    padding: 7px 10px;
-    width: 100px;
+    padding: 10px 2px;
+    width: 270px;
+    font-weight: bold;
     align-self: center;
   }
   
@@ -74,4 +75,5 @@ form{
   .contacto__formulario{
     margin-bottom: 40px;
   }
+
 }

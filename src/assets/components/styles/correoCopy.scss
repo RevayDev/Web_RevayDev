@@ -49,6 +49,10 @@
       top: 80px;
       font-size: 10px;
       height: 15px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
       padding:  10px 10px;
       background:  #354F604D;
       backdrop-filter: var(--trasparenteBorroso);
@@ -63,6 +67,10 @@
       &::after{
         position: absolute;
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         content: "";
       bottom: 40px;
       backdrop-filter: var(--trasparenteBorroso);
@@ -98,4 +106,10 @@
   border: none;
   }
   
-  
+  @media (max-width: 700px) {
+    .copy_botom{
+    .GUI{
+      top: 66px;
+    }
+  }
+  }

@@ -1,9 +1,12 @@
 
-
+.page__proyectos{
+  margin-top: 120px;
+}
 .Titulo__Page{
-    color: var(--color_secundario);
+    color: var(--color_primario);
     font-size: 100px;
     line-height: 3rem;
+    margin-bottom: 40px;
   }
   
   
@@ -60,6 +63,12 @@
   padding: 10px;
   border-radius: 20px 2px;
   background: var(--color_primario);
+  
+  & span{
+position: relative;
+z-index: 10;
+color: rgb(194, 194, 194);
+  }
 }
 
 .Parte::after{

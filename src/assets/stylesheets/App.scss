@@ -145,6 +145,7 @@ opacity: 0.7;
 
 .text_all{
   font-size: 50px;
+  font-weight: bold;
 }
 
 .text__hola{
@@ -612,10 +613,16 @@ gap: 10px;
      }   
   }
 
-  .header p{
+  .header {
     font-size: 30px;
     line-height: 2rem;
+    
    }
+   .text_all{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
    .text__name{
     font-size: 45px;
    }

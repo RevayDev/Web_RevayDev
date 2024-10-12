@@ -123,7 +123,7 @@ transition: 0.3s;
         text-align: center;
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
         opacity: 0;
      
     }
@@ -169,11 +169,10 @@ transition: 0.3s;
       background:var(--fondo_nav);
       backdrop-filter: var(--trasparenteBorroso);
   
-   height: 110px;
    border-bottom-left-radius: 1.5rem;
    border-bottom-right-radius: 1.5rem;
       transition: 0.2s;
-    height:340px;
+    height:220px;
 
    
 }

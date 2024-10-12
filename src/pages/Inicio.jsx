@@ -227,6 +227,11 @@ export default function Inicio() {
         />
           
       </article>
+
+      <div className="caja">
+       
+       <NavHashLink to="/proyectos"> <button className="BotomMasInformacion" onClick={handleClick}><span>Volver al inicio</span></button></NavHashLink>
+       </div>
           </section>
 </div>
 <div  id="habilidades"></div>
@@ -284,7 +289,7 @@ export default function Inicio() {
           <p className="sobremi_descripcion">
           Mi nombre es <span className="resaltar">Roberto Jimenez</span> tambien conocido como RevayDev soy un joven de 17 años y soy de nacionalidad colombiana.
           <br/> <br/>
-poseo una gran capacidad para <span className="resaltar">trabajar en equipo como de manera independiente. </span>
+poseo una gran capacidad para <span className="resaltar">trabajar en equipo o como de manera independiente. </span>
 Me apasiona aprender y estoy constantemente buscando formas de mejorar mis habilidades.<br/><br/>
 
 Destaco por mi habilidad para asimilar rápidamente nuevos conocimientos y aplicarlos eficientemente en cualquier tarea que se me asigne o enseñe.
@@ -298,7 +303,7 @@ Destaco por mi habilidad para asimilar rápidamente nuevos conocimientos y aplic
 
             </div>
             <div className="img">
-<img src="img/RevayDev.png" alt="" />
+<img src="img/RevayDev.png" alt="RevayDev" />
 </div>
           </div>
           <CorreoCopy initialEmail= "revaydev17@gmail.com" />
