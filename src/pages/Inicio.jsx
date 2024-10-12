@@ -228,7 +228,7 @@ export default function Inicio() {
           
       </article>
 
-      <div className="caja">
+      <div className="caja caja--Proyectos">
        
        <NavHashLink to="/proyectos"> <button className="BotomMasInformacion" onClick={handleClick}><span>Mas Proyectos</span></button></NavHashLink>
        </div>

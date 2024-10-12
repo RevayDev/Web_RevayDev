@@ -12,14 +12,19 @@ export default function ProyectoCard(props) {
       <p class="proyecto__descripcion">{props.descripcion}</p>
     
       <div class="proyecto__botones">
-      <span class={props.codigo ? 'proyecto__boton proyecto__boton--codigo' : ''}>
-        <a href={props.url1} target="_blank">
-        {props.icono_url1}   {props.texto_url1}</a>
-        </span>
-        <span class={props.info ? 'proyecto__boton proyecto__boton--info' : ''}>
-          <a href={props.url2} target="_blank">
+      <a 
+  href={props.url1} 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className={props.codigo ? 'proyecto__boton proyecto__boton--codigo' : 'proyecto__boton'}
+>
+  {props.icono_url1} {props.texto_url1}
+</a>
+
+        <a  href={props.url2} target="_blank"class={props.info ? 'proyecto__boton proyecto__boton--info' : ''}>
+       
           {props.icono_url2}  {props.texto_url2}</a>
-        </span>
+  
     
       </div>
     </div>
